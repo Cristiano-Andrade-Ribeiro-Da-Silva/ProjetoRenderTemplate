@@ -35,5 +35,3 @@ lista_img = [
              "crocodilo-02.jpg",
              "crocodilo-03.jpg", 
              "crocodilo-04.jpg"]
-
-

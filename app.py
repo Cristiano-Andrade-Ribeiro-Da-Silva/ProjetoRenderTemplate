@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect
-from .data import listas_configuracao as listas
+from data import listas_configuracao as listas
 import random
 
 app = Flask(__name__)
@@ -33,6 +33,7 @@ def post_cadastrarfrase():
     frases_html = request.form.get("frase")
     listas.lista_curiosidades.append(frases_html)
     return redirect ("/cadastro")
+
 
 
 @app.route("/cadastrocores", methods=["GET"])
