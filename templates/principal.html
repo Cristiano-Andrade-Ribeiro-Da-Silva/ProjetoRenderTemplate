@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        .container_form
+        {
+            width: 100%;
+            height: 200px;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .container_button
+        {
+            width: 200px;
+            height: 100px;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            margin: 10px;
+        }
+    
+        .container_button > button
+            {
+                width: 100px;
+                height: 50px;
+    
+                box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+    
+        </style>
+
 </head>
 <body>
+
+    <main class="container_form">
+
+        <form action="/sobre" class="container_button">
+        
+            <label>Curiosidades Sobre Crocodilos</label>
+            
+            <button>Curiosidades</button>
+        
+        </form>
     
+        <form action="/cadastro" class="container_button">
+            
+            <label for="">Cadastre Frases</label>
+            
+            <button>Frases</button>
+        
+        </form>
+    
+        <form action="/cadastrocores" class="container_button">
+            
+            <label for="">Cadastre Cores</label>
+            
+            <button>Cores</button>
+        
+        </form>
+
+    </main>
+
 </body>
 </html>

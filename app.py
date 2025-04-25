@@ -10,9 +10,7 @@ app = Flask(__name__)
 def pagina_principal():
     cores = random.choice(listas.lista_cores)
     curiosidade = random.choice(listas.lista_curiosidades)
-    return render_template("principal.html", 
-                           cores_html = cores, 
-                           curiosidade_html = curiosidade)
+    return render_template("principal.html", cores_html = cores, curiosidade_html = curiosidade)
 
 
 @app.route("/sobre")
